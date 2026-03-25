@@ -1,5 +1,7 @@
 # App Compatibility with GrapheneOS
-Just a collection of apps I've tested that work without Google Play Services on GrapheneOS. Feel free to add apps that you tested to the list. List can be found under the 'Code' section of this repo
+Just a collection of apps I've tested that work without Google Play Services on GrapheneOS. Feel free to add apps that you tested to the list. List can be found under the 'Code' section of this repo. For banking apps compatibility, check out the PrivSec banking app compatibility guide here;
+
+https://github.com/PrivSec-dev/banking-apps-compat-report
 # Contributing
 Thank you for wanting to contribute! You can help make this list better for everyone by adding apps you've tested on GrapheneOS that work properly without Google Play Services. This document explains the preferred work flow for adding apps to this list.
 # Before you begin
