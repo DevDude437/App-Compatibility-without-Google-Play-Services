@@ -15,6 +15,7 @@ If your changes are significant, open an issue first to discuss plans
 4. Push the branch to your fork and open a Pull Request (PR) against this repository's default branch
    
  If you used the web editor, GitHub will create a fork and open a PR for you automatically
+
 5. Fill out the PR template to help reviewers
 
 If you have write access
