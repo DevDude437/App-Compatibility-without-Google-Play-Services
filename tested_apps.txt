@@ -1,0 +1,22 @@
+Apps that work on GrapheneOS without Google Play Services;
+
+Kijiji Canada
+https://play.google.com/store/apps/details?id=com.ebay.kijiji.ca
+
+GitHub
+https://play.google.com/store/apps/details?id=com.github.android
+
+Bring A Trailer Auctions
+https://play.google.com/store/apps/details?id=com.bringatrailer.android
+
+The Weather Network
+https://play.google.com/store/apps/details?id=com.pelmorex.WeatherEyeAndroid
+
+Frameo Digital Photo Frame
+https://play.google.com/store/apps/details?id=net.frameo.app
+
+Microsoft Outlook
+https://play.google.com/store/apps/details?id=com.microsoft.office.outlook
+
+Trebel Music
+https://play.google.com/store/apps/details?id=com.mmm.trebelmusic
