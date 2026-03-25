@@ -50,3 +50,21 @@ https://play.google.com/store/apps/details?id=ch.protonvpn.android
 
 Proton Pass.https://play.google.com/store/apps/details?id=proton.android.pass
 
+Gasbuddy (gives error that it won't run without Google Play Services, but the app works when the notification is dismissed)
+https://play.google.com/store/apps/details?id=gbis.gbandroid
+
+InShot Photo Editor
+https://play.google.com/store/apps/details?id=com.camerasideas.instashot
+
+Zoho Show
+https://play.google.com/store/apps/details?id=com.zoho.show.app
+
+Zoho Sheets
+https://play.google.com/store/apps/details?id=com.zoho.sheet.android
+
+Magic Earth
+https://play.google.com/store/apps/details?id=com.generalmagic.magicearth
+
+HERE WeGo Navigation
+https://play.google.com/store/apps/details?id=com.here.app.maps
+
