@@ -38,8 +38,7 @@ To keep the list consistent, follow this Markdown line format for each app
 # What to include in your PR
 A clear title and the filled PR template
 
-Also remark if any special settings are needed to get the app to work,  
-e.g. Exploit Protection Compatibility Mode (if applicable).
+Also remark if any special settings are needed to get the app to work.
 
 # Review and merging
 Maintainers will review and may request changes
