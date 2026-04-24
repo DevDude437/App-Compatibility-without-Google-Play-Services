@@ -1,6 +1,6 @@
-# App Compatibility with GrapheneOS
+# App Compatibility without Google Play Services
 
-Just a collection of apps tested that work without Google Play Services on GrapheneOS.  
+Just a collection of apps tested that work without Google Play Services on degoogled devices, including GrapheneOS.  
 
 If you've never heard of GrapheneOS, I recommend you [check out their website](https://grapheneos.org).
 
