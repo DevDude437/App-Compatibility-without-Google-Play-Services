@@ -1,5 +1,6 @@
 // This is to appease VSCode's stupid linter from complaining about
-// front matter usage in SCSS files.
+// front matter usage in SCSS files and inline JS.
 {
     "scss.validate": false,
+    "html.validate.scripts": false
 }

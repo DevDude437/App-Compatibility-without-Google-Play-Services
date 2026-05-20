@@ -8,32 +8,40 @@
 
     --bg: #fff;
     --fg: #101010;
-    --border-colour: #cfcfcf;
+    --border-colour: #bbbbbb;
+    --focus-colour: #0073ff;
     --play-store-button-colour: #303030;
 
     @media (prefers-color-scheme: dark) {
         --bg: #0f0f0f;
         --fg: #e0e0e0;
         --border-colour: #444444;
+        --focus-colour: #55a5ff;
         --play-store-button-colour: #606060;
     }
 }
 
 @mixin is-large-mobile {
-    @media (max-width: 840px) {
+    @media (max-width: 1050px) {
         @content;
     }
 }
 
 @mixin is-medium-mobile {
-    @media (max-width: 555px) {
+    @media (max-width: 840px) {
         @content;
     }
 }
 
 @mixin is-small-mobile {
-    @media (max-width: 440px) {
+    @media (max-width: 690px) {
         @content;
+    }
+}
+
+@mixin is-very-small-mobile {
+    @media (max-width: 550px) {
+        @content
     }
 }
 
@@ -44,6 +52,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include is-small-mobile {
+        flex-direction: column;
+    }
 
     @media (prefers-color-scheme: light) {
         box-shadow: 0 1px 4px rgba(0, 0, 0, .35)
@@ -68,38 +80,72 @@
         }
 
         @include is-small-mobile {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             padding: 8px;
         }
     }
 
     .links {
-        padding: 16px;
+        padding: 0 16px;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        height: var(--navbar-height);
+        border-left: 1px dashed var(--border-colour);
+
+        @include is-small-mobile {
+            width: calc(100% - 32px);
+            border: none;
+            border-top: 1px dashed var(--border-colour);
+        }
 
         .link {
             display: flex;
             align-items: center;
             gap: 8px;
+            padding: 8px;
             color: var(--fg);
             text-decoration: none;
+            font-size: 1.25rem;
+            background-color: var(--bg);
+            box-sizing: border-box;
+            height: 45%;
+            border: 1px solid var(--border-colour);
+
+            @include is-small-mobile {
+                height: 65%;
+            }
             
             i {
-                font-size: 1.5rem;
+                font-size: 100%
             }
 
+            @media (min-width: 1051px) {
+                padding: 8px
+            }
+        }
+
+        a.link {
             @include is-large-mobile {
                 i {
                     font-size: 2rem;
                 }
-
                 span {
                     display: none;
                 }
             }
+        }
 
-            @media (min-width: 841px) {
-                border: 1px solid var(--border-colour);
-                padding: 8px
+        input.link {
+            font-family: monospace;
+            
+            @include is-large-mobile {
+                width: 20ch;
+                font-size: 0.95rem;
+            }
+
+            @include is-small-mobile {
+                width: calc(100% - 8px);
             }
         }
     }
@@ -112,7 +158,7 @@ body {
     padding: 0;
 }
 
-body > div {
+body > main {
     width: 100%;
     height: calc(100dvh - var(--navbar-height));
 }
@@ -158,11 +204,11 @@ body > div {
 
         font-size: 1.15rem;
 
-        @include is-medium-mobile {
+        @include is-small-mobile {
             font-size: 1rem;
         }
 
-        @include is-small-mobile {
+        @include is-very-small-mobile {
             font-size: 0.75rem;
         }
     }
