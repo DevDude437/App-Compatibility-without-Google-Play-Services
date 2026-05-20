@@ -3,12 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="{{ site.description}}">
+        <meta name="description" content="{{ site.description }}">
+        <script>
+            const APPS = [
+                {% for app in site.apps %}
+                    {
+                        name: {{ app.name | jsonify }},
+                        description: {{ app.description | jsonify }},
+                        notes: {{ app.notes | jsonify }},
+                        version: {{ app.version | jsonify }},
+                        link: {{ app.link | jsonify }}
+                    },
+                {% endfor %}
+            ]
+        </script>
         <!-- See issue #27 -->
         {% if jekyll.environment == "production" %}
             <link rel="stylesheet" href="/App-Compatibility-without-Google-Play-Services/assets/css/style.css">
+            <script src="/App-Compatibility-without-Google-Play-Services/assets/js/index.js"></script>
         {% else %}
             <link rel="stylesheet" href="/assets/css/style.css">
+            <script src="/assets/js/index.js"></script>
         {% endif %}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <title>{{ site.title }}</title>
@@ -17,16 +32,26 @@
         <nav class="navbar">
             <span class="brand">{{ site.title }}</span>
             <div class="links">
+                <input type="text" class="link" id="filter" placeholder="Filter...">
                 <a class="link" href="{{ site.repo }}"> 
                     <i class="bi bi-github"></i>
                     <span>
-                        Star on GitHub
+                        GitHub
                     </span>
                 </a>
             </div>
         </nav>
-        <div>
+        <main>
             {{ content }}
-        </div>
+        </main>
+
+        <!-- Search functionality shall only work if JS is enabled -->
+        <noscript>
+            <style>
+                #filter {
+                    display: none;
+                }
+            </style>
+        </noscript>
     </body>
 </html>
