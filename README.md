@@ -15,3 +15,8 @@ The former license covers assets such as text and images, if any,
 while the latter covers all source code.
 
 The licenses are available in the `LICENSE.md` file.
+# Credits
+A huge thank you to [Axel Karlsson](https://github.com/0xdefoliate) for all his help developing the website. This project wouldn't be possible without his help. 
+
+Other Contributors;
+[Developer Dude](https://github.com/DevDude437)
