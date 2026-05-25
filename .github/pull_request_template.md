@@ -1,28 +1,25 @@
-Title (use one line summary)
+# Info
 
-Example: Add App Name--short description
+## Description
+*What does this PR do?*
 
-What this PR does
+## Related issue
 
-Brief summary of changes (1-2 lines)
+*Put the `Closes` keyword along with the issue number below here.*
 
-Related issue
-Closes # (if applicable) or N/A
+## Type of change
 
-Type of change
+⬜️ New Entry  
 
-[ ] New entry (addition)
+⬜️ Fix/update to existing entry  
 
-[ ] Fix/update to existing entry
-
-[ ] Other (explain)
+⬜️ Other (explain)
  
-Checklist for contributors
+## Checklist
 
-[✅] I followed the app entry format defined in CONTRIBUTING.md
+✅ I followed the app entry format as defined in `CONTRIBUTING.md`  
+✅ This app submitted fulfills the **App Submission Requirements** section found in `CONTRIBUTING.md`
 
-[✅] This app submitted fulfills the App Submission Requirements section found in the CONTRIBUTING.md file
+## Notes for reviewers/additional context
 
-Notes for reviewers/additional context
-
-Add any important notes, caveats, or manual steps reviewers should be aware of here
+*Add any important notes, caveats, or manual steps reviewers should be aware of below*
