@@ -19,9 +19,8 @@ function populate(apps) {
 
         const badgeWrapper = createElement("span", { className: "badge" })
         const badge = createElement("code", { textContent: app.version })
-        const description = createElement("p", { textContent: app.description })
         const notesWrapper = createElement("div", {})
-        const notes = createElement("span", { innerHTML: `<b>NOTES:</b> <i>${app.notes}</i>` })
+        const notes = createElement("span", { innerHTML: `<b>NOTE:</b> <i>${app.notes}</i>` })
         const footer = createElement("div", { className: "footer" })
         const link = createElement("a", { className: "play-store-link", href: app.link, textContent: "Play Store" })
 
@@ -30,7 +29,7 @@ function populate(apps) {
         notesWrapper.append(notes)
         footer.append(link)
 
-        wrapper.append(titleWrapper, description, notesWrapper, footer)
+        wrapper.append(titleWrapper, notesWrapper, footer)
         elements.push(wrapper)
     }
 

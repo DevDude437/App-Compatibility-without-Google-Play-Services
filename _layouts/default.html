@@ -9,7 +9,6 @@
                 {% for app in site.apps %}
                     {
                         name: {{ app.name | jsonify }},
-                        description: {{ app.description | jsonify }},
                         notes: {{ app.notes | jsonify }},
                         version: {{ app.version | jsonify }},
                         link: {{ app.link | jsonify }}

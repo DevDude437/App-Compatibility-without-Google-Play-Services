@@ -202,6 +202,8 @@ body > main {
         align-items: center;
         justify-content: space-between;
 
+        margin-bottom: 16px;
+
         font-size: 1.15rem;
 
         @include is-small-mobile {
