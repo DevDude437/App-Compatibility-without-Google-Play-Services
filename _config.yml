@@ -2,7 +2,9 @@ title: App Compatibility without Play Services
 description: A collection of apps tested for Android which works without Play Services
 repo: "https://github.com/DevDude437/App-Compatibility-without-Google-Play-Services"
 
-theme_colour: "#3076cb"
+theme_colour: 
+  light: "#0f0f0f"
+  dark: "#e0e0e0"
 
 collections:
   - apps
